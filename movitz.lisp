@@ -34,8 +34,8 @@
 (defvar +movitz-multiple-values-limit+ 63)
 
 (defvar *bq-level* 0)
-(defvar *default-image-init-file* #p"losp/los0.lisp")
-(defvar *default-image-file* #p"los0-image")
+(defvar *default-image-init-file* (asdf:system-relative-pathname :movitz #P"losp/los0.lisp"))
+(defvar *default-image-file* (asdf:system-relative-pathname :movitz  #P"los0-image"))
 
 (defvar *movitz-host-features* *features*
   "The *features* of the host implementation.")
